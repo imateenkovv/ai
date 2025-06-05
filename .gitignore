@@ -1,4 +1,4 @@
-.env
+.env.example
 volumes/
 shared/
 neo4j/

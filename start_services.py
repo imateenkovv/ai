@@ -40,10 +40,10 @@ def clone_supabase_repo():
         os.chdir("..")
 
 def prepare_supabase_env():
-    """Copy .env to .env in supabase/docker."""
-    env_path = os.path.join("supabase", "docker", ".env")
-    env_example_path = os.path.join(".env")
-    print("Copying .env in root to .env in supabase/docker...")
+    """Copy .env.example to .env.example in supabase/docker."""
+    env_path = os.path.join("supabase", "docker", ".env.example")
+    env_example_path = os.path.join(".env.example")
+    print("Copying .env.example in root to .env.example in supabase/docker...")
     shutil.copyfile(env_example_path, env_path)
 
 def stop_existing_containers(profile=None):
